@@ -1,0 +1,35 @@
+// Navigation Styles here
+
+
+.logo {
+    // .flex(row nowrap, flex-end);
+    width: 30%;
+    justify-content: center
+}
+
+.primary-nav {
+    // width: 30%;
+    // text-align: right;
+    
+    a{
+        color: @dark-green;
+        text-decoration: none;
+        font-size:1.8rem;
+        margin: 0 20px;
+    }
+}
+    @media @mobile {
+       .header{
+        .flex(column nowrap);
+       }
+    h1 {
+        display: inline-block;
+        width: 100%;
+    }
+    nav {
+        .flex(row nowrap, space-evenly);
+        width: 100%;
+        text-align: right;
+
+    }
+}

@@ -1,0 +1,33 @@
+.primary-footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  height: 10%;
+
+  small {
+    color: white;
+  }
+  
+  nav {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px;
+    text-decoration: none;
+    a {
+      color: @dark-green;
+    }
+  }
+  .mobile-footer {
+    visibility: hidden;
+  }
+}
+
+@media @mobile {
+  .primary-footer{
+.main-footer {
+  display:none;
+}
+.mobile-footer{
+  visibility: initial;
+}
+}
+}

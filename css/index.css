@@ -181,7 +181,7 @@ img {
   justify-content: center;
 }
 .primary-nav a {
-  color: #61892F;
+  color: #F0E3FF;
   text-decoration: none;
   font-size: 1.8rem;
   margin: 0 20px;
@@ -221,7 +221,7 @@ img {
   text-decoration: none;
 }
 .primary-footer nav a {
-  color: #61892F;
+  color: #F0E3FF;
 }
 .primary-footer .mobile-footer {
   visibility: hidden;
@@ -237,7 +237,7 @@ img {
 body {
   display: flex;
   justify-content: center;
-  background-color: #222629;
+  background-color: #3E206D;
 }
 body .container-home {
   width: 80%;
@@ -275,13 +275,13 @@ body .container-home .header-section header {
   position: relative;
   align-items: center;
   justify-content: center;
-  background-color: #474B4F;
+  background-color: #916DD5;
   animation-name: slidingText;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
 body .container-home .header-section header a {
-  color: #61892F;
+  color: #F0E3FF;
   text-decoration: none;
 }
 body .container-home .header-section .nav-bar-top {
@@ -294,7 +294,7 @@ body .container-home .header-section .nav-bar-top {
 }
 body .container-home .header-section .nav-bar-top a {
   text-decoration: none;
-  color: #61892F;
+  color: #F0E3FF;
   padding: 0px 20px;
 }
 @media (max-width: 1000px) {
@@ -406,7 +406,7 @@ body .container-home .home-main-mid h4 {
 }
 body .home-main-bot {
   margin-top: 4vh;
-  color: #6B6E70;
+  color: #D89CF6;
   width: 90%;
   display: flex;
   justify-content: space-evenly;
@@ -423,7 +423,7 @@ footer {
   font-size: 1.6rem;
   display: flex;
   padding: 90px 0px 30px 0px;
-  color: #474B4F;
+  color: #916DD5;
   width: 100%;
   justify-content: center;
 }

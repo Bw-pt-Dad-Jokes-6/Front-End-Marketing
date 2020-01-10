@@ -164,7 +164,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
-  color: #474B4F;
+  color: white;
 }
 img {
   max-width: 100%;
@@ -181,7 +181,7 @@ img {
   justify-content: center;
 }
 .primary-nav a {
-  color: #61892F;
+  color: #F0E3FF;
   text-decoration: none;
   font-size: 1.8rem;
   margin: 0 20px;
@@ -206,8 +206,36 @@ img {
     text-align: right;
   }
 }
+.primary-footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  height: 10%;
+}
+.primary-footer small {
+  color: white;
+}
+.primary-footer nav {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 20px;
+  text-decoration: none;
+}
+.primary-footer nav a {
+  color: #F0E3FF;
+}
+.primary-footer .mobile-footer {
+  visibility: hidden;
+}
+@media (max-width: 500px) {
+  .primary-footer .main-footer {
+    display: none;
+  }
+  .primary-footer .mobile-footer {
+    visibility: initial;
+  }
+}
 body {
-  background-color: #222629;
+  background-color: #3E206D;
 }
 .header {
   display: flex;
@@ -218,7 +246,7 @@ body {
   width: 100%;
 }
 .header a {
-  color: #61892F;
+  color: #F0E3FF;
   text-decoration: none;
 }
 .main {
@@ -234,6 +262,9 @@ body {
   padding: 20px 30px 0;
   text-align: center;
 }
+.main .top p {
+  color: white;
+}
 .main .card {
   width: 20%;
   height: 300px;
@@ -242,11 +273,14 @@ body {
   vertical-align: text-top;
   padding: 5px;
 }
+.main img {
+  height: 200px;
+  width: 175px;
+}
 .main a {
   text-decoration: none;
-}
-.main a :hover {
-  text-shadow: 2px 0px 20px red;
+  color: green;
+  font-size: 2 rem;
 }
 @media (max-width: 1000px) {
   .header {
@@ -287,33 +321,5 @@ body {
   .main .card {
     width: 100%;
     height: 300px;
-  }
-}
-.primary-footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  height: 10%;
-}
-.primary-footer small {
-  color: white;
-}
-.primary-footer nav {
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 20px;
-  text-decoration: none;
-}
-.primary-footer nav a {
-  color: #61892F;
-}
-.primary-footer .mobile-footer {
-  visibility: hidden;
-}
-@media (max-width: 500px) {
-  .primary-footer .main-footer {
-    display: none;
-  }
-  .primary-footer .mobile-footer {
-    visibility: initial;
   }
 }

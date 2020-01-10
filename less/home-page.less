@@ -1,23 +1,3 @@
-@keyframes slidingText {
-  0% {left: -1%;}
-  50% {left: 1%;}
-  100% {left: -1%;}
-}
-
-@keyframes clickSelector {
-  0% {
-    color: white;
-    position: relative;
-    bottom: 2px;
-  }
-
-  100% {
-    color: @dark-green;
-    position: relative;
-    bottom: -1px;
-  }
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -73,11 +53,11 @@ body {
         min-width: 65%;
         font-size: 1.8rem;
         padding: 10px 30px;
-        border-radius: 20px;
+        // border-radius: 20px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        background-color: @medium-dark;
+        // background-color: @medium-dark;
 
         a {
           text-decoration: none;
@@ -110,6 +90,7 @@ body {
 
     .home-main-top {
       width: 100%;
+      height:350px;
       display: flex;
       justify-content: space-between;
       min-height: 30vh;
@@ -118,6 +99,7 @@ body {
         flex-direction: column;
         align-items: center;
         min-width: 70%;
+        min-height: 60vh;
       }
 
       img {
@@ -125,6 +107,7 @@ body {
         max-height: 300px;
 
         @media @mobile {
+          min-height: 70vh;
           padding-bottom: 4vh;
         }
       }
@@ -137,7 +120,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: @light-dark;
+        color: @white;
 
         @media @tablet {
           min-width: 80%;
@@ -157,9 +140,26 @@ body {
     }
 
     .home-main-mid {
-      padding-top: 4vh;
       width: 100%;
-      color: @light-dark;
+      display: flex;
+      justify-content: space-between;
+      min-height: 30vh;
+
+      @media @tablet {
+        flex-direction: column-reverse;
+        align-items: center;
+        min-width: 70%;
+        min-height: 45vh;
+      }
+
+      img {
+        min-width: 400px;
+        max-height: 300px;
+
+        @media @mobile {
+          padding-bottom: 4vh;
+        }
+      }
 
       h4 {
         color: white;
@@ -187,60 +187,7 @@ body {
       align-items: center;
     }
 
-    .on-board-img {
-      
-      img {
-        width: 80%;
-
-        @media @tablet {
-          width: 100%;
-          margin-bottom: 4vh;
-        }
-      }
-    }
-
-    .on-board-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-      h2 {
-        width: 75%;
-
-        @media @tablet {
-          width: 100%;
-        }
-      }
-
-      .on-board-info {
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-
-        h5 {
-          color: @light-dark;
-          padding-bottom: 5px;
-          padding-top: 7px;
-        }
-
-        input {
-          min-width: 100%;
-        }
-
-        .btn-parent {
-          display: flex;
-          justify-content: center;
-
-          .on-board-submit {
-            margin-top: 10px; 
-            width: 40%;
-            font-size: 1.4rem;
-            border-radius: 20px;
-            background-color: @light-dark;
-            border-color: @light-dark;
-          }
-        }
-      }
+  
     }
   }
 
@@ -252,4 +199,3 @@ body {
     width: 100%;
     justify-content: center;
   }
-}
